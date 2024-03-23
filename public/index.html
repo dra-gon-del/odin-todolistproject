@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script src="../dist/main.js"></script>
+    <script defer src="../dist/main.js"></script>
 </head>
 <body>
-    
+    <div class="headerDiv">
+        <h2 class="title">Your To-Do-List</h2>
+    </div>
+    <div class="projectsDiv">
+        <h2 id="projectsTitle">Projects:</h2>
+        <div class="projectsList"></div>
+        <div class="projectFooter">
+            <button class="addProject">+</button>
+            <p id="newProjectText">New Project</p>
+        </div>
+    </div>
+    <div class="listDiv">
+        <div class="toDoList"></div>
+        <button id="addToDo">+</button>
+    </div>
+    </div>
 </body>
 </html>

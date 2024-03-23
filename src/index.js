@@ -1,4 +1,8 @@
-import '.style.scss';
+import './styles.css';
 
-import { camelCase } from 'lodash';
-console.log(camelCase('helloworld'));
+
+console.log('hello world');
+
+import { addToDoMessage } from './toDo.js';
+
+addToDoMessage;

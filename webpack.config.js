@@ -18,6 +18,14 @@ module.exports = {
                     'sass-loader',
                 ],
             },
+            {
+                // Rule for CSS files
+                test: /\.css$/,
+                use: [
+                  "style-loader", // Injects CSS into the DOM
+                  "css-loader", // Turns CSS into commonjs
+                ],
+              },
         ],
     },
     
