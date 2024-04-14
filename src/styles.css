@@ -96,13 +96,13 @@ body {
     margin-bottom: 25px;
 }
 
-.toDoList ul {
+ul {
     border: 1px solid black ;
     margin: 10px;
     height: 500px;
 }
 
-.toDoList ul li {
+ul li {
     font-size: 30px;
     margin: 20px;
     user-select: none;
@@ -110,7 +110,7 @@ body {
     position: relative;
     list-style-type: none;
 }
-.toDoList ul li::before{
+ul li::before{
     content: '';
     position:absolute;
     height: 28px;
@@ -122,11 +122,11 @@ body {
     top: 4.5px;
     left: -34px;
 }
-.toDoList ul li.checked {
+ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-.toDoList ul li.checked::before {
+ul li.checked::before {
     background-image: url(../imgs/checked.png);
 }
 
