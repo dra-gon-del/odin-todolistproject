@@ -1,8 +1,18 @@
-import { add } from 'lodash';
 import './styles.css';
 
 
 console.log('hello world');
+
+//project list js
+
+const listsContainer = document.querySelector('[data-lists]')
+
+let lists = [];
+
+
+
+
+//to do list js
 
 const inputBox = document.getElementById("inputBox");
 const listContainer = document.getElementById("listContainer");

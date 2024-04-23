@@ -5,15 +5,25 @@ body {
     background-color: #2e2e2e;
 }
 
-.headerDiv , .projectsDiv , .listDiv {
+.headerDiv , .projectsDiv , .listDiv , .footerDiv {
     border-radius: 20px;
     padding: 28px;
     background-color: #9c9c9c;
+
 }
 
 .headerDiv {
     grid-column: 1 / 9;
     grid-row: 1 / 2;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footerDiv {
+    grid-column: 1 / 9;
+    grid-row: 10 / 11;
     align-items: center;
     display: flex;
     align-items: center;
@@ -28,7 +38,7 @@ body {
 
 .projectsDiv {
     grid-column: 1 / 2;
-    grid-row: 2 / 20;
+    grid-row: 2 / 10;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -41,7 +51,7 @@ body {
     height: 10px;
 }
 
-.projectsList {
+.projectsContainer {
     border: solid black 2px;
     height: 450px;
 }
@@ -82,11 +92,18 @@ body {
     border-radius: 10px;
 }
 
+#projectInputBox {
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
 /* To do div */
 
 .listDiv {
     grid-column: 2 / 9;
-    grid-row: 2 / 20;
+    grid-row: 2 / 10;
     border: 1px solid black;
 }
 

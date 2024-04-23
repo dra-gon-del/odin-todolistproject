@@ -12,10 +12,16 @@
     </div>
     <div class="projectsDiv">
         <h2 id="projectsTitle">Projects:</h2>
-        <div class="projectsList"></div>
+        <div class="projectsContainer" data-lists>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
         <div class="projectFooter">
             <button class="addProject">+</button>
-            <p id="newProjectText">New Project</p>
+            <input type="text" id="projectInputBox" placeholder="New Project">
         </div>
     </div>
     <div class="listDiv">
@@ -24,7 +30,10 @@
         </div>
         <div class="addDiv">
             <button id="addToDo">+</button>
-            <input type="text" id="inputBox" placeholder="Add your text">
+            <input type="text" id="inputBox" placeholder="New To-Do">
+            <p class="clearCompletedTasks">Clear Completed</p>
+            <p class="deleteList">Delete List</p>
+            <p class="remainingIndicator">3 Tasks Remaining</p>
         </div>
         </div>
     </div>
