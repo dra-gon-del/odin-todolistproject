@@ -121,10 +121,25 @@ body {
     margin-bottom: 25px;
 }
 
+.listTitleDiv {
+    display: flex;
+    align-items: center;
+}
+
+.listTitle {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.remainingIndicator {
+    margin-top: 20.5px;
+    text-decoration: underline;
+}
+
 .toDoList ul {
     border: 1px solid black ;
     margin: 10px;
-    height: 500px;
+    height: 440px;
 }
 
 .toDoList ul li {
