@@ -27,27 +27,39 @@
             </div>
     </div>
     <div class="listDiv" data-list-display-container>
-        <div class="toDoList">
-            <div class="listTitleDiv">
-                <h2 class="listTitle" data-list-title>youtube</h2>
-                <p class="remainingIndicator" data-list-remaining-indicator>3 Tasks Remaining</p>
+        <div class="listTitleDiv">
+            <h2 class="listTitle" data-list-title>youtube</h2>
+            <p class="remainingIndicator" data-list-remaining-indicator>3 Tasks Remaining</p>
+        </div>
+        <div class="tasks" data-tasks>
+            <div class="task">
+                <input type="checkbox" id="task-1"/>
+                <label for="task-1">
+                    <span class="customCheckbox"></span>
+                    task one
+                </label>
             </div>
-            <div id="listContainer" data-tasks>
-                <ul>
-                    <li>one</li>
-                    <li>two</li>
-                    <li>three</li>
-                </ul>
+            <div class="task">
+                <input type="checkbox" id="task-1"/>
+                <label for="task-1">
+                    <span class="customCheckbox"></span>
+                    task one
+                </label>
             </div>
-            
+            <div class="task">
+                <input type="checkbox" id="task-1"/>
+                <label for="task-1">
+                    <span class="customCheckbox"></span>
+                    task one
+                </label>
+            </div>
         </div>
         <div class="addDiv">
-            <button id="addToDo">+</button>
+            <button id="addToDo" aria-label="createNewList">+</button>
             <input type="text" id="inputBox" placeholder="NewTo-Do">
             <p class="clearCompletedTasks">Clear Completed</p>
             <p class="deleteList" data-delete-list-btn>Delete List</p>
             
-        </div>
         </div>
     </div>
 </body>

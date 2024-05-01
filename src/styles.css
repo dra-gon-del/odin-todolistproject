@@ -136,11 +136,13 @@ body {
     text-decoration: underline;
 }
 
-.toDoList #listContainer {
+.tasks {
     border: 1px solid black ;
     margin: 10px;
     height: 440px;
+    ;
 }
+
 
 /* .toDoList #listContainer ul li {
     font-size: 30px;
