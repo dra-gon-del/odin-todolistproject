@@ -22,7 +22,7 @@
         <div class="projectFooter">
             <form action="" data-new-list-form>
                 <button class="addProject">+</button>
-                <input type="text" id="projectInputBox" data-new-list-input placeholder="New Project">
+                <input type="text" id="projectInputBox" data-new-list-input placeholder="NewProject">
             </form>
             </div>
     </div>
@@ -32,12 +32,18 @@
                 <h2 class="listTitle" data-list-title>youtube</h2>
                 <p class="remainingIndicator" data-list-remaining-indicator>3 Tasks Remaining</p>
             </div>
+            <div id="listContainer" data-tasks>
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                </ul>
+            </div>
             
-            <ul id="listContainer" data-tasks></ul>
         </div>
         <div class="addDiv">
             <button id="addToDo">+</button>
-            <input type="text" id="inputBox" placeholder="New To-Do">
+            <input type="text" id="inputBox" placeholder="NewTo-Do">
             <p class="clearCompletedTasks">Clear Completed</p>
             <p class="deleteList" data-delete-list-btn>Delete List</p>
             

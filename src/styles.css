@@ -136,13 +136,13 @@ body {
     text-decoration: underline;
 }
 
-.toDoList ul {
+.toDoList #listContainer {
     border: 1px solid black ;
     margin: 10px;
     height: 440px;
 }
 
-.toDoList ul li {
+/* .toDoList #listContainer ul li {
     font-size: 30px;
     margin: 20px;
     user-select: none;
@@ -151,7 +151,7 @@ body {
     list-style-type: none;
     padding-left: 5px;
 }
-.toDoList ul li::before{
+.toDoList #listContainer ul li::before{
     content: '';
     position:absolute;
     height: 28px;
@@ -163,15 +163,15 @@ body {
     top: 4.5px;
     left: -34px;
 }
-.toDoList ul li.checked {
+.toDoList #listContainer ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-.toDoList ul li.checked::before {
+.toDoList #listContainer ul li.checked::before {
     background-image: url(../imgs/checked.png);
 }
 
-.toDoList ul li span {
+.toDoList #listContainer ul li span {
     position: absolute;
     right: 0;
     top: 5px;
@@ -184,6 +184,6 @@ body {
     border-radius: 10px;
 }
 
-.toDoList ul li span:hover {
+.toDoList #listContainer ul li span:hover {
     background: #edeef062;
-}
+} */

@@ -16,7 +16,7 @@ const listRemainingElement = document.querySelector('[data-list-remaining-indica
 const tasksContainer = document.querySelector('[data-tasks]')
 
 const LOCAL_STORAGE_LIST_KEY = 'task.lists'
-const LOCAL_STORAGE_SELECTED_LIST_ID_KEY = 'task.lists'
+const LOCAL_STORAGE_SELECTED_LIST_ID_KEY = 'task.selectedListId'
 let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || []
 let selectedListId = localStorage.getItem
 (LOCAL_STORAGE_SELECTED_LIST_ID_KEY)
@@ -63,6 +63,18 @@ function render(){
     renderLists()
 }
 
+// if (selectedListId == null) {
+//     listDisplayContainer.style.display = 'none'
+// } else {
+//     listDisplayContainer.style.display = ''
+//     listTitleElement.innerText = selectedList.name
+//     renderTaskCount(selectedList)
+// }
+
+function renderTaskCount(selectedList) {
+
+}
+
 function renderLists() {
     lists.forEach(list => {
         const listElement = document.createElement('li')
@@ -85,7 +97,7 @@ function clearElement(element) {
 render()
 
 
-// //to do list js
+//to do list js
 
 const inputBox = document.getElementById("inputBox");
 const listContainer = document.getElementById("listContainer");
