@@ -5,7 +5,7 @@ body {
     background-color: #2e2e2e;
 }
 
-.headerDiv , .projectsDiv , .listDiv , .footerDiv {
+.headerDiv , .projectsDiv , .todoDiv , .footerDiv {
     border-radius: 20px;
     padding: 28px;
     background-color: #9c9c9c;
@@ -79,7 +79,7 @@ body {
     text-align: center;
 } 
 
-.addDiv {
+.addTodoDiv {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -99,7 +99,7 @@ body {
     border-radius: 10px;
 }
 
-.listName {
+.projectListName {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
@@ -109,7 +109,7 @@ body {
 
 /* To do div */
 
-.listDiv {
+.todoDiv {
     grid-column: 2 / 9;
     grid-row: 2 / 10;
     border: 1px solid black;
@@ -121,12 +121,12 @@ body {
     margin-bottom: 25px;
 }
 
-.listTitleDiv {
+.todoTitleDiv {
     display: flex;
     align-items: center;
 }
 
-.listTitle {
+.todoTitle {
     margin-left: 25px;
     margin-right: 25px;
 }

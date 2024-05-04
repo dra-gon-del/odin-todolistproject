@@ -12,26 +12,26 @@
     </div>
     <div class="projectsDiv">
         <h2 id="projectsTitle">Projects:</h2>
-        <div class="projectsContainer" data-lists>
-            <ul>
-                <li class="listName">one</li>
-                <li class="listName">two</li>
-                <li class="listName">three</li> 
+        <div class="projectsContainer" >
+            <ul class="projectList">
+                <li class="projectListName">one</li>
+                <li class="projectListName">two</li>
+                <li class="projectListName">three</li> 
             </ul>
         </div>
         <div class="projectFooter">
-            <form action="" data-new-list-form>
+            <form action="">
                 <button class="addProject">+</button>
-                <input type="text" id="projectInputBox" data-new-list-input placeholder="NewProject">
+                <input type="text" id="projectInputBox" placeholder="NewProject">
             </form>
-            </div>
+        </div>
     </div>
-    <div class="listDiv" data-list-display-container>
-        <div class="listTitleDiv">
-            <h2 class="listTitle" data-list-title>youtube</h2>
-            <p class="remainingIndicator" data-list-remaining-indicator>3 Tasks Remaining</p>
+    <div class="todoDiv">
+        <div class="todoTitleDiv">
+            <h2 class="todoTitle">youtube</h2>
+            <p class="remainingIndicator">3 Tasks Remaining</p>
         </div>
-        <div class="tasks" data-tasks>
+        <div class="tasks">
             <div class="task">
                 <input type="checkbox" id="task-1"/>
                 <label for="task-1">
@@ -54,7 +54,7 @@
                 </label>
             </div>
         </div>
-        <div class="addDiv">
+        <div class="addTaskDiv">
             <button id="addToDo" aria-label="createNewList">+</button>
             <input type="text" id="inputBox" placeholder="NewTo-Do">
             <p class="clearCompletedTasks">Clear Completed</p>
