@@ -60,6 +60,11 @@ body {
     margin-top: 50px;
 }
 
+.projectList li {
+    display: list-item;
+    list-style-type: circle;
+}
+
 .projectFooter form {
     display: flex;
     flex-direction: row;
@@ -220,6 +225,7 @@ body {
     height: 3px;
     background: currentColor;
     transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
 }
 
 [type="checkbox"]:checked + label::after {
