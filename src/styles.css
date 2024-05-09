@@ -116,6 +116,10 @@ body {
     margin-top: 15px;
 }
 
+.active-list {
+    font-weight:bold;
+}
+
 /* To do div */
 
 .todoDiv {
