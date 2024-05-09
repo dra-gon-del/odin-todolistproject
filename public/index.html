@@ -55,9 +55,9 @@
             </div> -->
         </div>
         <div class="addTaskDiv">
-            <form action="">
+            <form action="" data-new-task-form>
                 <button id="addToDo" aria-label="createNewList">+</button>
-                <input type="text" id="inputBox" placeholder=" New To-Do">
+                <input type="text" data-new-task-input id="inputBox" placeholder=" New To-Do">
             </form>
         </div>
         <div class="deleteTaskDiv">
@@ -66,5 +66,13 @@
         </div>
             
     </div>
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox"/>
+            <label>
+                <span class="customCheckbox"></span>
+            </label>
+        </div>
+    </template>
 </body>
 </html>
