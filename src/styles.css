@@ -38,7 +38,7 @@ body {
 
 .projectsDiv {
     grid-column: 1 / 2;
-    grid-row: 2 / 10;
+    grid-row: 2 / 11;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -124,7 +124,7 @@ body {
 
 .todoDiv {
     grid-column: 2 / 9;
-    grid-row: 2 / 10;
+    grid-row: 2 / 11;
     border: 1px solid black;
 }
 
@@ -179,6 +179,8 @@ body {
     margin-bottom: 1.75em;
     margin-top: 1.25em;
 }
+
+
 
 .task::after {
     content: "";
@@ -235,6 +237,12 @@ body {
 [type="checkbox"]:checked + label::after {
     transform: scaleX(1);
 }
+
+.deleteTaskDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+};
 
 /* .toDoList #listContainer ul li {
     font-size: 30px;

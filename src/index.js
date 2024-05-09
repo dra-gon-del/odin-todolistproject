@@ -12,7 +12,7 @@ const deleteListButton = document.querySelector('[data-delete-list-btn]');
 
 const listDisplayContainer = document.querySelector('[data-list-display-container]');
 const listTitleElement = document.querySelector('[data-list-title]');
-const listCountElement = document.querySelector('[data-list-count]')
+const listCountElement = document.querySelector('[data-list-count]');
 const tasksContainer = document.querySelector('[data-tasks]');
 
 
@@ -62,6 +62,18 @@ function save() {
 
 function render() {
     clearElement(listsContainer);
+    renderLists();
+    const selectedList = lists.find(list => list.id === selectedListId);
+
+    if (selectedListId == null) {
+        listDisplayContainer.style.display = 'none';
+    } else {
+        listDisplayContainer.style.display = '';
+        listTitleElement.innerText = selectedList.name;
+    };
+};
+
+function renderLists() {
     lists.forEach(list => {
         const listElement = document.createElement('li');
         listElement.dataset.listId = list.id;
@@ -72,7 +84,7 @@ function render() {
         };
         listsContainer.appendChild(listElement);
     });
-};
+}
 
 function clearElement(element){
     while (element.firstChild) {
