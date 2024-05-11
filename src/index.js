@@ -26,7 +26,7 @@ let selectedListId = localStorage.getItem
 
 listsContainer.addEventListener('click', e => {
     if(e.target.tagName.toLowerCase() === 'li') {
-        selectedListId = e.target.dataset.listId;
+        selectedListId = e.target.dataset.listId; 
         saveAndRender();
     };
 });
@@ -34,6 +34,16 @@ listsContainer.addEventListener('click', e => {
 deleteListButton.addEventListener('click', e => {
     lists = lists.filter(list => list.id !== selectedListId);
     selectedListId = null;
+    saveAndRender();
+});
+
+newListForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const listName = newListInput.value;
+    if (listName == null || listName === '') return;
+    const list = createList(listName);
+    newListInput.value = null;
+    lists.push(list);
     saveAndRender();
 });
 
@@ -57,7 +67,7 @@ function createList(name) {
 };
 
 function createTask(name) {
-    return {id: Date.now().toString(), name: name, complete: false};
+    return {id: Date.now().toString(), name: name,  complete: false};
 };
 
 function saveAndRender() {
@@ -74,7 +84,6 @@ function render() {
     clearElement(listsContainer);
     renderLists();
     const selectedList = lists.find(list => list.id === selectedListId);
-
     if (selectedListId == null) {
         listDisplayContainer.style.display = 'none';
     } else {
